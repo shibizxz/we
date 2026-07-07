@@ -1,0 +1,24 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720" fill="none">
+  <rect width="1280" height="720" rx="28" fill="#07131C"/>
+  <rect x="24" y="24" width="1232" height="672" rx="24" fill="#0F1F2B" stroke="#1D3948"/>
+  <rect x="52" y="52" width="1176" height="56" rx="18" fill="#112532"/>
+  <circle cx="88" cy="80" r="10" fill="#7DF57A" fill-opacity="0.9"/>
+  <circle cx="120" cy="80" r="10" fill="#11D4BB" fill-opacity="0.9"/>
+  <circle cx="152" cy="80" r="10" fill="#31B4FF" fill-opacity="0.9"/>
+  <rect x="84" y="164" width="420" height="28" rx="14" fill="#7DF57A" fill-opacity="0.8"/>
+  <rect x="84" y="220" width="780" height="82" rx="20" fill="#EDF8F5" fill-opacity="0.95"/>
+  <rect x="84" y="332" width="612" height="28" rx="14" fill="#A6C2BF" fill-opacity="0.7"/>
+  <rect x="84" y="378" width="528" height="28" rx="14" fill="#A6C2BF" fill-opacity="0.45"/>
+  <rect x="84" y="456" width="220" height="68" rx="34" fill="url(#g)"/>
+  <rect x="328" y="456" width="220" height="68" rx="34" stroke="#466675" fill="none"/>
+  <rect x="760" y="164" width="392" height="392" rx="28" fill="#0A1A23" stroke="#1D3948"/>
+  <path d="M824 460L914 370L978 434L1066 338L1132 404" stroke="#11D4BB" stroke-width="18" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="914" cy="370" r="20" fill="#7DF57A"/>
+  <text x="84" y="612" fill="#EDF8F5" font-family="Arial, sans-serif" font-size="32" font-weight="700">Add screenshot as assets/work1.png or assets/work2.png</text>
+  <defs>
+    <linearGradient id="g" x1="84" y1="456" x2="304" y2="524" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#11D4BB"/>
+      <stop offset="1" stop-color="#31B4FF"/>
+    </linearGradient>
+  </defs>
+</svg>
