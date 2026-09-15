@@ -170,3 +170,15 @@ main>section{width:100%;max-width:none;margin-inline:0}
   .capability-group{min-width:0;justify-content:flex-start}
   .capability-banner .capability-track{width:min(var(--content-max),calc(100% - var(--page-gutter)*2));margin-inline:auto}
 }
+
+/* Draw the capability sparkle so iOS cannot replace it with an emoji glyph. */
+.capability-track span:before{
+  content:'';
+  display:inline-block;
+  width:11px;
+  height:11px;
+  flex:0 0 11px;
+  background:var(--accent);
+  -webkit-clip-path:polygon(50% 0,59% 35%,85% 15%,65% 41%,100% 50%,65% 59%,85% 85%,59% 65%,50% 100%,41% 65%,15% 85%,35% 59%,0 50%,35% 41%,15% 15%,41% 35%);
+  clip-path:polygon(50% 0,59% 35%,85% 15%,65% 41%,100% 50%,65% 59%,85% 85%,59% 65%,50% 100%,41% 65%,15% 85%,35% 59%,0 50%,35% 41%,15% 15%,41% 35%);
+}
