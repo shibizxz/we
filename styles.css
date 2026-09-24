@@ -68,12 +68,16 @@
 .back-top{display:grid;place-items:center;padding:0}
 .back-top .direction-icon{width:18px;height:18px}
 .whatsapp-float b{display:inline-flex;align-items:center;line-height:1}
+.work-media.yukti-media img{height:390px;transform:translateY(-58px)}
+.work-card:hover .work-media.yukti-media img{transform:translateY(-64px)}
 @media(max-width:760px){
   .footer-top{gap:26px 16px}.footer h4{margin-bottom:16px}
   .footer-brand>p{margin:20px 0 0}.footer-links{gap:10px}
   .footer-bottom{margin-top:26px;padding-top:20px;padding-bottom:calc(64px + env(safe-area-inset-bottom,0px));line-height:1.6}
   .whatsapp-float{bottom:calc(16px + env(safe-area-inset-bottom,0px))}
   .back-top{bottom:calc(17px + env(safe-area-inset-bottom,0px))}
+  .carousel-track .work-media.yukti-media img{height:206px;transform:translateY(-46px)}
+  .carousel-track .work-card:hover .work-media.yukti-media img{transform:translateY(-46px)}
 }
 /* Seamless service banner, with one accessible copy of each label. */
 .capability-banner{position:relative;overflow:hidden;border-top:1px solid var(--line);padding-right:44px}
