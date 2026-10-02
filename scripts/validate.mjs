@@ -6,10 +6,13 @@ for (const page of pages) {
   const html = readFileSync(page, 'utf8');
   const ids = [...html.matchAll(/\bid="([^"]+)"/g)].map(match => match[1]);
   if (new Set(ids).size !== ids.length) errors.push(`${page}: duplicate id`);
-  for (const required of ['<title>', 'name="description"', 'name="viewport"', 'id="main"', 'aria-label="Main navigation"']) {
+  for (const required of ['<title>', 'name="description"', 'name="viewport"', 'rel="canonical"', 'name="robots"', 'id="main"', 'aria-label="Main navigation"']) {
     if (!html.includes(required)) errors.push(`${page}: missing ${required}`);
   }
   if ([...html.matchAll(/<h1[ >]/g)].length !== 1) errors.push(`${page}: expected one h1`);
+  for (const [, json] of html.matchAll(/<script type="application\/ld\+json">([\s\S]*?)<\/script>/g)) {
+    try { JSON.parse(json); } catch (error) { errors.push(`${page}: invalid JSON-LD (${error.message})`); }
+  }
   for (const [, reference] of html.matchAll(/(?:src|href)="([^"]+)"/g)) {
     if (/^(?:https?:|mailto:|tel:|data:)/.test(reference)) continue;
     const [url, anchor] = reference.split('#');
@@ -21,5 +24,8 @@ for (const page of pages) {
     }
   }
 }
+for (const required of ['robots.txt', 'sitemap.xml', 'llms.txt', 'site.webmanifest']) {
+  if (!existsSync(resolve(required))) errors.push(`missing ${required}`);
+}
 if (errors.length) { console.error(errors.join('\n')); process.exit(1); }
-console.log(`Validated ${pages.length} pages: metadata, local assets, links, and anchors.`);
+console.log(`Validated ${pages.length} pages: metadata, structured data, local assets, links, and anchors.`);

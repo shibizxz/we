@@ -1,0 +1,16 @@
+{
+  "name": "WEBAPPZZ TECHNOLOGIES",
+  "short_name": "WEBAPPZZ",
+  "description": "Web development, software, SEO and digital marketing studio in Kerala.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#101110",
+  "theme_color": "#101110",
+  "icons": [
+    {
+      "src": "/assets/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

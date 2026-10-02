@@ -1,6 +1,6 @@
 # WEBAPPZZ TECHNOLOGIES
 
-Six-page responsive digital studio website. Plain HTML, CSS, and JavaScript; no frontend build dependencies.
+Responsive digital studio website with service landing pages, project case studies, local-business signals, and enquiry tools. Plain HTML, CSS, and JavaScript; no frontend build dependencies.
 
 ## Experience
 
@@ -15,17 +15,21 @@ Six-page responsive digital studio website. Plain HTML, CSS, and JavaScript; no 
 
 ## Pages
 
-`index.html`, `services.html`, `works.html`, `packages.html`, `contact.html`, and `privacy.html` share `styles.css` and `script.js`. Client screenshots and brand assets are in `assets/`.
+The main navigation pages share `styles.css`, `script.js`, and `carousel.js`. Six focused service pages and four project case studies give search engines and visitors a clear page for each offer and proof point. Client screenshots and brand assets are in `assets/`.
 
 ## Local development
 
-Serve this directory with a local HTTP server. Run `npm run build` to create the deployment output. Run `node scripts/validate.mjs` to check local page/asset links, anchor targets, and required page metadata. Browser checks are recorded in `QA.md`.
+Serve this directory with a local HTTP server. Run `npm run build` to create the deployment output. Run `npm run validate` to check metadata, structured data, local links, assets, and anchor targets. After a live deployment, `npm run submit:indexnow` submits the sitemap URLs to IndexNow for participating search engines. Browser checks are recorded in `QA.md`.
 
 ## Content updates
 
 Update package scope in `packages.html`; no fixed prices are invented. Update the project planner recommendations in `script.js` when service scope changes. Update contact destinations consistently in the HTML and `script.js`. New portfolio cards need `data-category` and a unique `id`.
 
 The existing Sites project is recorded in `.openai/hosting.json`. Source metadata continues to use the company's `https://webappzz.com/` canonical domain.
+
+## Search and AI discovery
+
+Every public page has a canonical URL, descriptive title and summary, share metadata, crawl directives, responsive social image, and internal links. `sitemap.xml`, `robots.txt`, and `llms.txt` expose the public structure to conventional and AI search crawlers. Schema.org data describes the business, website, services, location, contact routes, and public case studies. Fonts are self-hosted and portfolio images have responsive WebP variants to improve loading speed.
 
 ## UAE software and growth services
 

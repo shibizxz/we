@@ -67,3 +67,13 @@ Supersedes the earlier manual-controls design: all mobile carousels now autoplay
 - Checked all six pages at 320, 390, 768, 1024, 1440, 1920, and 3840px: no document horizontal overflow or generated playback controls. Content caps at 1480px on large screens.
 - Visually inspected the phone carousel and 4K homepage. Banner groups cover a full 4K viewport, avoiding empty loop tails; phone autoplay advanced with no controls present.
 - JavaScript syntax, six-page metadata/link validation, and production build passed. These are emulated viewport checks; live deployment was not performed.
+
+## Search visibility expansion — 2 October 2026
+
+- Added six focused service pages, four public case studies, an About page, and a branded 404 page. The sitemap now lists 17 indexable pages.
+- Added canonical, Open Graph, Twitter, local-business, service, collection, breadcrumb, and case-study metadata where appropriate. Structured JSON data parses successfully.
+- Added explicit crawl access for major search and AI search crawlers, `llms.txt`, a web app manifest, complete favicon assets, and an IndexNow submission command for use after deployment.
+- Replaced remote fonts with local font files and replaced multi-megabyte portfolio images with responsive WebP variants. Old unused image files were removed.
+- Updated internal links, enquiry preselection, heading order, accessible names, privacy copy, and footer discovery links.
+- Rendered all 18 HTML pages at a 390px viewport: no horizontal overflow, broken images, missing primary headings, missing canonical URLs, or missing structured-data blocks. The homepage and a service page were also visually reviewed at desktop and phone sizes.
+- Mobile Lighthouse on the optimized homepage scored 92 Performance, 100 Accessibility, 100 Best Practices, and 100 SEO. The transfer size was about 500 KiB with zero measured layout shift.

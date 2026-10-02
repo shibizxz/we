@@ -14,7 +14,7 @@ mkdirSync(assets, { recursive: true });
 mkdirSync(server, { recursive: true });
 
 for (const file of readdirSync(root)) {
-  if (/\.(html|css|js|txt|xml)$/i.test(file)) cpSync(join(root, file), join(assets, file));
+  if (/\.(html|css|js|txt|xml|ico|webmanifest)$/i.test(file)) cpSync(join(root, file), join(assets, file));
 }
 cpSync(join(root, "assets"), join(assets, "assets"), { recursive: true });
 

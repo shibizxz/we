@@ -4,6 +4,8 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "build": "node scripts/build.mjs"
+    "build": "node scripts/build.mjs",
+    "validate": "node scripts/validate.mjs",
+    "submit:indexnow": "node scripts/submit-indexnow.mjs"
   }
 }
