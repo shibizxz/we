@@ -15,7 +15,7 @@ Responsive digital studio website with service landing pages, project case studi
 
 ## Pages
 
-The main navigation pages share `styles.css`, `script.js`, and `carousel.js`. Six focused service pages and four project case studies give search engines and visitors a clear page for each offer and proof point. Client screenshots and brand assets are in `assets/`.
+The main navigation pages share `styles.css`, `script.js`, and `carousel.js`. Six focused service pages and five project case studies give search engines and visitors a clear page for each offer and proof point. Client screenshots and brand assets are in `assets/`.
 
 ## Local development
 

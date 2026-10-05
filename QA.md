@@ -77,3 +77,13 @@ Supersedes the earlier manual-controls design: all mobile carousels now autoplay
 - Updated internal links, enquiry preselection, heading order, accessible names, privacy copy, and footer discovery links.
 - Rendered all 18 HTML pages at a 390px viewport: no horizontal overflow, broken images, missing primary headings, missing canonical URLs, or missing structured-data blocks. The homepage and a service page were also visually reviewed at desktop and phone sizes.
 - Mobile Lighthouse on the optimized homepage scored 92 Performance, 100 Accessibility, 100 Best Practices, and 100 SEO. The transfer size was about 500 KiB with zero measured layout shift.
+
+## Inkivo ecommerce case study — 5 October 2026
+
+- Added Inkivo.in to the homepage and Work portfolio as the fifth public website, including an Ecommerce filter and published-domain link.
+- Added a dedicated case study describing live photo and logo customization, English and Malayalam text, Razorpay payments, and timed Resend email notifications.
+- Generated responsive 640px and 1280px WebP portfolio images from the supplied project screenshot; both variants load without errors.
+- Added case-study metadata, Open Graph and Twitter images, Article and breadcrumb structured data, sitemap discovery, and the public URL to `llms.txt`.
+- Verified all 19 HTML pages for metadata, structured data, local assets, internal links, and fragment targets. The production build passed.
+- Visually checked the new case study at 390px and 1440px. Both sizes have one primary heading, no broken images, no generated playback controls, and no document-level horizontal overflow.
+- Verified the Ecommerce portfolio filter on desktop and phone. It returns Inkivo as the single result with the correct count.
