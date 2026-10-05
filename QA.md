@@ -87,3 +87,9 @@ Supersedes the earlier manual-controls design: all mobile carousels now autoplay
 - Verified all 19 HTML pages for metadata, structured data, local assets, internal links, and fragment targets. The production build passed.
 - Visually checked the new case study at 390px and 1440px. Both sizes have one primary heading, no broken images, no generated playback controls, and no document-level horizontal overflow.
 - Verified the Ecommerce portfolio filter on desktop and phone. It returns Inkivo as the single result with the correct count.
+
+## Image alternative text audit — 6 October 2026
+
+- Scanned every image across all 19 HTML pages. No image was missing the `alt` attribute; 38 header and footer logo instances used an empty value and triggered the SEO notice.
+- Added the accurate description “WEBAPPZZ TECHNOLOGIES logo” to every brand image while preserving the descriptive project-image text already present.
+- Extended the validation script to reject future images with a missing or blank `alt` value.
