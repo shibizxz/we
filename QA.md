@@ -93,3 +93,9 @@ Supersedes the earlier manual-controls design: all mobile carousels now autoplay
 - Scanned every image across all 19 HTML pages. No image was missing the `alt` attribute; 38 header and footer logo instances used an empty value and triggered the SEO notice.
 - Added the accurate description “WEBAPPZZ TECHNOLOGIES logo” to every brand image while preserving the descriptive project-image text already present.
 - Extended the validation script to reject future images with a missing or blank `alt` value.
+
+## Primary business email — 10 October 2026
+
+- Set `info@webappzz.com` as the primary address in visible email links, enquiry email handoff, footers, privacy contact information and ProfessionalService structured data.
+- Retained `webappzzofficial@gmail.com` as a secondary address on the Contact, About and Privacy pages.
+- Updated page modification dates, sitemap dates and the AI-readable company contact summary.

@@ -173,7 +173,7 @@ if(projectForm){
       'Project details: '+String(data.get('details')).trim()].join('\n');
     document.querySelector('#brief-text').textContent=brief;
     document.querySelector('#send-whatsapp').href='https://wa.me/918089872334?text='+encodeURIComponent(brief);
-    document.querySelector('#send-email').href='mailto:webappzzofficial@gmail.com?subject=Project%20enquiry&body='+encodeURIComponent(brief);
+    document.querySelector('#send-email').href='mailto:info@webappzz.com?subject=Project%20enquiry&body='+encodeURIComponent(brief);
     status.textContent='';preview.hidden=false;document.querySelector('#brief-title').focus();
   });
   document.querySelector('#copy-brief').addEventListener('click',async()=>{
