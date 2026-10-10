@@ -23,5 +23,7 @@
 ## Company and contact
 - https://webappzz.com/about.html
 - https://webappzz.com/contact.html
+- Primary email: info@webappzz.com
+- Secondary email: webappzzofficial@gmail.com
 
 Public case studies describe only verifiable work. UAE in-house software client names and internal screens remain confidential.
