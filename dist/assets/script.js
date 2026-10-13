@@ -97,6 +97,7 @@ if(planner){
   back.addEventListener('click',()=>{if(current>0)showStep(current-1)});
   const recommendations={
     Website:['Essential Launch','A focused business website with clear messaging, responsive pages, and a direct enquiry path.'],
+    'Website redesign':['Business Growth','A website redesign focused on clearer messaging, mobile usability, stronger enquiry paths, and an SEO-safe launch.'],
     'Web application':['Startup Product','A custom web application with a scoped first release, purposeful workflows, and the integrations you need.'],
     'Flutter app':['Startup Product','A mobile product for Android and iOS, with interface design, backend planning, and a clear launch scope.'],
     'Business software':['Startup Product','A custom billing or business software project. We will map your current workflow, users, and required features before agreeing the build scope.'],

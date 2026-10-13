@@ -10,6 +10,11 @@ for (const page of pages) {
     if (!html.includes(required)) errors.push(`${page}: missing ${required}`);
   }
   if ([...html.matchAll(/<h1[ >]/g)].length !== 1) errors.push(`${page}: expected one h1`);
+  for (const [image] of html.matchAll(/<img\b[^>]*>/g)) {
+    const alt = image.match(/\balt="([^"]*)"/);
+    if (!alt) errors.push(`${page}: image missing alt attribute (${image.slice(0, 100)})`);
+    else if (!alt[1].trim()) errors.push(`${page}: image has blank alt text (${image.slice(0, 100)})`);
+  }
   for (const [, json] of html.matchAll(/<script type="application\/ld\+json">([\s\S]*?)<\/script>/g)) {
     try { JSON.parse(json); } catch (error) { errors.push(`${page}: invalid JSON-LD (${error.message})`); }
   }
@@ -28,4 +33,4 @@ for (const required of ['robots.txt', 'sitemap.xml', 'llms.txt', 'site.webmanife
   if (!existsSync(resolve(required))) errors.push(`missing ${required}`);
 }
 if (errors.length) { console.error(errors.join('\n')); process.exit(1); }
-console.log(`Validated ${pages.length} pages: metadata, structured data, local assets, links, and anchors.`);
+console.log(`Validated ${pages.length} pages: metadata, image alt text, structured data, local assets, links, and anchors.`);

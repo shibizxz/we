@@ -1,12 +1,13 @@
 # WEBAPPZZ TECHNOLOGIES
 
-> Independent digital studio in Cheruthuruthi, Kerala, India. WEBAPPZZ designs and develops business websites, web applications, Flutter products, confidential in-house billing and business software, SEO, Google Business Profile improvements, and digital marketing systems.
+> Independent digital studio in Cheruthuruthi, Kerala, India. WEBAPPZZ designs and develops business websites, website redesigns, web applications, Flutter products, confidential in-house billing and business software, SEO, Google Business Profile improvements, and digital marketing systems.
 
 ## Canonical website
 - https://webappzz.com/
 
 ## Services
 - https://webappzz.com/website-development-kerala.html
+- https://webappzz.com/website-redesign-services.html
 - https://webappzz.com/web-app-development.html
 - https://webappzz.com/flutter-app-development.html
 - https://webappzz.com/custom-business-software-uae.html
