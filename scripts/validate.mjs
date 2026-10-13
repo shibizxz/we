@@ -2,6 +2,7 @@ import { readFileSync, readdirSync, existsSync } from 'node:fs';
 import { resolve } from 'node:path';
 const pages = readdirSync('.').filter(file => file.endsWith('.html'));
 const errors = [];
+const googleMeasurementId = 'G-EW9LMF4KNL';
 for (const page of pages) {
   const html = readFileSync(page, 'utf8');
   const ids = [...html.matchAll(/\bid="([^"]+)"/g)].map(match => match[1]);
@@ -9,6 +10,8 @@ for (const page of pages) {
   for (const required of ['<title>', 'name="description"', 'name="viewport"', 'rel="canonical"', 'name="robots"', 'id="main"', 'aria-label="Main navigation"']) {
     if (!html.includes(required)) errors.push(`${page}: missing ${required}`);
   }
+  if (!html.includes(`googletagmanager.com/gtag/js?id=${googleMeasurementId}`)) errors.push(`${page}: missing Google tag loader`);
+  if (!html.includes(`gtag('config','${googleMeasurementId}')`)) errors.push(`${page}: missing Google tag configuration`);
   if ([...html.matchAll(/<h1[ >]/g)].length !== 1) errors.push(`${page}: expected one h1`);
   for (const [image] of html.matchAll(/<img\b[^>]*>/g)) {
     const alt = image.match(/\balt="([^"]*)"/);
