@@ -191,6 +191,12 @@ main>section{width:100%;max-width:none;margin-inline:0}
 }
 
 
+/* Shared portal access stays inside the responsive navigation. */
+.nav{align-items:center;gap:clamp(12px,1.7vw,25px)}
+.nav .portal-login{border:1px solid var(--line);border-radius:8px;padding:8px 14px;color:var(--text);white-space:nowrap;font-weight:700}
+.nav .portal-login:hover{background:var(--surface2);border-color:var(--accent)}
+@media(max-width:760px){.nav{align-items:stretch;gap:3px}.nav .portal-login{margin-top:8px;padding:12px 14px;text-align:center}}
+
 /* Search-focused detail and case-study pages */
 .breadcrumb{display:flex;gap:10px;align-items:center;padding-top:24px;color:var(--muted);font-size:.78rem}.breadcrumb a:hover{color:var(--text)}
 .detail-hero{padding-top:62px}.detail-hero h1{font-size:clamp(2.8rem,5vw,5rem)}
