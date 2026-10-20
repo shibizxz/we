@@ -206,6 +206,8 @@ main>section{width:100%;max-width:none;margin-inline:0}
 @media(max-width:359px){.header-actions{gap:6px}.header-inner{gap:8px}.header-inner .brand{gap:7px}.header-inner .brand-mark{width:27px}.header-inner .brand-copy strong{font-size:1.05rem}.header-inner .brand-copy>span{font-size:.5rem}}
 
 /* Search-focused detail and case-study pages */
+.work-media img.car-castle-preview,.detail-image img.car-castle-preview{height:auto;min-height:0;aspect-ratio:1280/705;object-fit:contain}
+.mini-project img.car-castle-preview{object-fit:contain;object-position:center;background:#f5f3ea}
 .breadcrumb{display:flex;gap:10px;align-items:center;padding-top:24px;color:var(--muted);font-size:.78rem}.breadcrumb a:hover{color:var(--text)}
 .detail-hero{padding-top:62px}.detail-hero h1{font-size:clamp(2.8rem,5vw,5rem)}
 .content-layout{display:grid;grid-template-columns:minmax(0,1fr) 330px;gap:90px;align-items:start}.content-main{max-width:850px}.content-main h2{font-size:clamp(2rem,3vw,3rem);margin-top:48px}.content-main h2:first-of-type{margin-top:0}.content-lead{font-size:1.14rem}.aside-card{position:sticky;top:125px;padding:30px;border:1px solid var(--line);border-radius:16px;background:var(--surface);display:grid;gap:13px}.aside-card strong{font-family:'Space Grotesk',sans-serif;font-size:1.25rem}.aside-card p{margin:0}.aside-card a{overflow-wrap:anywhere}.aside-card a:hover{color:var(--accent)}
