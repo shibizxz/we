@@ -191,11 +191,19 @@ main>section{width:100%;max-width:none;margin-inline:0}
 }
 
 
-/* Shared portal access stays inside the responsive navigation. */
+/* Portal access is a compact header action on every screen. */
 .nav{align-items:center;gap:clamp(12px,1.7vw,25px)}
-.nav .portal-login{border:1px solid var(--line);border-radius:8px;padding:8px 14px;color:var(--text);white-space:nowrap;font-weight:700}
-.nav .portal-login:hover{background:var(--surface2);border-color:var(--accent)}
-@media(max-width:760px){.nav{align-items:stretch;gap:3px}.nav .portal-login{margin-top:8px;padding:12px 14px;text-align:center}}
+.header-actions{flex-shrink:0}
+.portal-login{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:44px;padding:10px 16px;border:1px solid color-mix(in srgb,var(--accent) 35%,var(--line));border-radius:10px;background:color-mix(in srgb,var(--accent) 7%,var(--bg));color:var(--text);font-size:.875rem;font-weight:700;line-height:1;white-space:nowrap;transition:background .2s,border-color .2s,color .2s}
+.portal-login svg{display:block;width:18px;height:18px;flex:none;color:var(--accent)}
+.portal-login:hover{background:var(--accent);border-color:var(--accent);color:var(--ink)}
+.portal-login:hover svg{color:inherit}
+:root[data-theme=light] .portal-login svg{color:#526a22}
+:root[data-theme=light] .portal-login:hover svg{color:inherit}
+@media(max-width:1100px) and (min-width:761px){.header-inner{gap:18px}.header-actions{gap:10px}.portal-login{padding-inline:13px}}
+@media(max-width:760px){.nav{align-items:stretch;gap:3px}.header-inner{gap:10px}.header-actions{gap:8px}.header-actions .icon-button,.header-actions .nav-toggle{width:40px;height:40px}.portal-login{min-height:40px;padding:10px 13px;font-size:.8125rem;border-radius:10px}}
+@media(max-width:420px){.portal-login{width:40px;height:40px;padding:0}.portal-login span{display:none}}
+@media(max-width:359px){.header-actions{gap:6px}.header-inner{gap:8px}.header-inner .brand{gap:7px}.header-inner .brand-mark{width:27px}.header-inner .brand-copy strong{font-size:1.05rem}.header-inner .brand-copy>span{font-size:.5rem}}
 
 /* Search-focused detail and case-study pages */
 .breadcrumb{display:flex;gap:10px;align-items:center;padding-top:24px;color:var(--muted);font-size:.78rem}.breadcrumb a:hover{color:var(--text)}
